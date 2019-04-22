@@ -1,0 +1,9 @@
+.vs
+BusinessLayerLibrary/bin
+BusinessLayerLibrary/obj
+DataAccessLibrary/bin
+DataAccessLibrary/obj
+RepositoryLib/bin
+RepositoryLib/obj
+WebUserInterface/bin
+WebUserInterface/obj
