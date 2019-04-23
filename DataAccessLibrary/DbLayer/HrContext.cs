@@ -12,9 +12,9 @@ namespace DataAccessLibrary.DbLayer
         {
         }
 
-        public virtual DbSet<Employee> Employee { get; set; }
-        public virtual DbSet<EmpPromotion> EmpPromotion { get; set; }
-        public virtual DbSet<JobTitle> JobTitle { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<EmpPromotion> EmpPromotions { get; set; }
+        public virtual DbSet<JobTitle> JobTitles { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -36,7 +36,5 @@ namespace DataAccessLibrary.DbLayer
                 .WithRequired(e => e.JobTitle)
                 .WillCascadeOnDelete(false);
         }
-
-        public System.Data.Entity.DbSet<EmpPromotion> EmpPromotiones { get; set; }
     }
 }

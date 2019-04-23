@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayerLibrary", "Bus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUserInterface", "WebUserInterface\WebUserInterface.csproj", "{FEB86812-CBE9-4AFA-9192-146C00D499E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{17A32AC4-50B4-4B5E-8ED0-062B9A32A80A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{FEB86812-CBE9-4AFA-9192-146C00D499E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEB86812-CBE9-4AFA-9192-146C00D499E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEB86812-CBE9-4AFA-9192-146C00D499E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A32AC4-50B4-4B5E-8ED0-062B9A32A80A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A32AC4-50B4-4B5E-8ED0-062B9A32A80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A32AC4-50B4-4B5E-8ED0-062B9A32A80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A32AC4-50B4-4B5E-8ED0-062B9A32A80A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
