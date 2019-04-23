@@ -15,14 +15,14 @@ namespace BusinessLayerLibrary.Modules
 {
     public class ServiceModule : Module
     {
-        void SetDependencies<TypeService, GenericServiceDTO, TypeRepository, GenericRepositoryType>(ContainerBuilder builder)
-        {
-            builder.RegisterType(typeof(TypeService))
-                             .As(typeof(GenericServiceDTO));
+        //void SetDependencies<TypeService, GenericServiceDTO, TypeRepository, GenericRepositoryType>(ContainerBuilder builder)
+        //{
+        //    builder.RegisterType(typeof(TypeService))
+        //                     .As(typeof(GenericServiceDTO));
 
-            builder.RegisterType(typeof(TypeRepository))
-                             .As(typeof(GenericRepositoryType));
-        }
+        //    builder.RegisterType(typeof(TypeRepository))
+        //                     .As(typeof(GenericRepositoryType));
+        //}
 
         protected override void Load(ContainerBuilder builder)
         {
@@ -31,18 +31,17 @@ namespace BusinessLayerLibrary.Modules
             //    EmpPromotionRepository, IGenericRepository<EmpPromotion>>
             //        (builder);
 
+            // EmpPromotion
+            builder.RegisterType(typeof(EmpPromotionService))
+                         .As(typeof(IGenericService<EmpPromotionDTO>));
+            builder.RegisterType(typeof(EmpPromotionRepository))
+                      .As(typeof(IGenericRepository<EmpPromotion>));
 
             // Employee
             builder.RegisterType(typeof(EmployeeService))
                         .As(typeof(IGenericService<EmployeeDTO>));
             builder.RegisterType(typeof(EmployeeRepository))
                       .As(typeof(IGenericRepository<Employee>));
-
-            // EmpPromotion
-            builder.RegisterType(typeof(EmpPromotionService))
-                         .As(typeof(IGenericService<EmpPromotionDTO>));
-            builder.RegisterType(typeof(EmpPromotionRepository))
-                      .As(typeof(IGenericRepository<EmpPromotion>));
 
             // JobTitle
             builder.RegisterType(typeof(JobTitleService))

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLibrary.Repositories
 {
-    public class JobTitleRepository : GenericRepository<EmpPromotion>
+    public class JobTitleRepository : GenericRepository<JobTitle>
     {
         public JobTitleRepository(DbContext context) : base(context)
         {
